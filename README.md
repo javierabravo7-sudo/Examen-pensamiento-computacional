@@ -57,3 +57,46 @@ ellipse(posX, posY, 24);
 
 ---
 
+CONCEPTO
+Mi concepto principal fue el arte optico y los juegos vintage, tambien me inpire en Allan Alcor quien creo que el juego original de Pong en 1972 como un simple proyecto de prueba sin imaginarse que se convertiria en un juego iconico de la epoca.
+
+INTERACCIONES
+El juego se centra en dos interacciones clave: el movimiento de la raqueta utilizando el mouse y un clic para iniciar o reiniciar el juego. El objetivo principal es mantener la pelota en juego durante el mayor tiempo posible.
+
+###  Datos del mouse
+- `mouseY` posición vertical del mouse
+- clic del mouse `mousePressed
+
+### Datos generados por el sistema
+
+- posiciones aleatorias de la pelota:
+- `posX = random`
+- `posY = random`
+
+### Datos internos del juego
+
+- `estado`
+- `marcador`
+
+- velocidad de la pelota:
+- `velX`
+- `velY`
+
+## Procesamiento de datos
+
+El juego procesa los datos dentro de `draw` en cada frame:
+
+###  Movimiento de la pelota
+- La posición cambia constantemente:
+```javascript posX += velX;
+posY += velY;
+------------------------------------------------------------------------------------------------------------------------
+
+##RECURSOS
+Se uso el recurso de imagen para el fondo en formato jpg que añade la funcion de dificultad en el juego, ya que distrae y camufla la raqueta y pelota.
+
+##REFLEXION
+Este proyecto permitió comprender cómo un videojuego no es solo un conjunto de imágenes en movimiento, sino un sistema donde los datos entran, se procesan y generan resultados en tiempo real.
+A través del desarrollo del juego tipo Pong en p5.js, se pudo observar cómo el movimiento del mouse, los clics y las variables internas como la posición, velocidad y puntaje trabajan en conjunto para crear una experiencia interactiva.
+También fue importante entender el uso de los estados del juego , ya que permiten organizar la lógica y dar estructura a la interacción del usuario.
+En conclusión, este proyecto ayudó a comprender de manera práctica conceptos básicos de programación como variables, condicionales, bucles y eventos, además de mostrar cómo estos elementos pueden utilizarse para crear una experiencia jugable completa e interactiva.
